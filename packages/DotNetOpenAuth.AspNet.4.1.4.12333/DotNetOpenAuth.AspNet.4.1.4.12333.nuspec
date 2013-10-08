@@ -5,7 +5,7 @@
     <version>4.1.4.12333</version>
     <title>DotNetOpenAuth extensions for ASP.NET (WebPages)</title>
     <authors>Microsoft</authors>
-    <owners>Outercurve Foundation</owners>
+    <owners>Microsoft</owners>
     <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
     <projectUrl>http://www.dotnetopenauth.net/</projectUrl>
     <iconUrl>https://github.com/AArnott/dotnetopenid/raw/v3.4/doc/logo/dnoa-logo_32x32.png</iconUrl>
@@ -17,6 +17,8 @@
       <dependency id="DotNetOpenAuth.OpenId.RelyingParty" version="[4.1.4.12333]" />
       <dependency id="DotNetOpenAuth.OAuth.Consumer" version="[4.1.4.12333]" />
     </dependencies>
-    <references />
+    <references>
+      <reference file="DotNetOpenAuth.AspNet.dll" />
+    </references>
   </metadata>
 </package>

@@ -19,6 +19,9 @@ Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.</description>
       <dependency id="System.Spatial" version="[5.2.0]" />
       <dependency id="Microsoft.Data.Edm" version="[5.2.0]" />
     </dependencies>
-    <references />
+    <references>
+      <reference file="Microsoft.Data.OData.dll" />
+      <reference file="Microsoft.Data.OData.SL.dll" />
+    </references>
   </metadata>
 </package>

@@ -5,7 +5,7 @@
     <version>4.1.4.12333</version>
     <title>DotNetOpenAuth OAuth 1.0(a) Consumer</title>
     <authors>Andrew Arnott</authors>
-    <owners>Outercurve Foundation</owners>
+    <owners>Andrew Arnott</owners>
     <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
     <projectUrl>http://www.dotnetopenauth.net/</projectUrl>
     <iconUrl>https://github.com/AArnott/dotnetopenid/raw/v3.4/doc/logo/dnoa-logo_32x32.png</iconUrl>
@@ -16,6 +16,8 @@
     <dependencies>
       <dependency id="DotNetOpenAuth.OAuth.Core" version="[4.1.4.12333]" />
     </dependencies>
-    <references />
+    <references>
+      <reference file="DotNetOpenAuth.OAuth.Consumer.dll" />
+    </references>
   </metadata>
 </package>

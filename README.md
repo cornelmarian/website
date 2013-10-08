@@ -1,4 +1,0 @@
-website
-=======
-
-Demonstrative web site

@@ -12,6 +12,9 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Classes to represent, construct, parse, serialize and validate entity data models. Targets .NET 4.0 or Silverlight 4.0. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.</description>
     <tags>wcf data services odata odatalib edmlib spatial ado.net ef entity framework open protocol wcfds wcfdataservices dataservices</tags>
-    <references />
+    <references>
+      <reference file="Microsoft.Data.Edm.dll" />
+      <reference file="Microsoft.Data.Edm.SL.dll" />
+    </references>
   </metadata>
 </package>
