@@ -48,8 +48,8 @@ namespace MessageBoard.Controllers
         model.Website,
         model.Comment);
 
-      if (_mail.SendMail("noreply@yourdomain.com", 
-        "foo@yourdomain.com",
+      if (_mail.SendMail(model.Email, 
+       "marian_cornel_jr@yahoo.com",
         "Website Contact",
         msg))
       {
