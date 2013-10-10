@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace MessageBoard
 {
@@ -9,10 +11,20 @@ namespace MessageBoard
   {
     public static void Register(HttpConfiguration config)
     {
+      var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
+      jsonFormatter.SerializerSettings.ContractResolver =
+        new CamelCasePropertyNamesContractResolver();
+
+      config.Routes.MapHttpRoute(
+          name: "RepliesRoute",
+          routeTemplate: "api/v1/topics/{topicid}/replies/{id}",
+          defaults: new { controller = "replies", id = RouteParameter.Optional }
+      );
+
       config.Routes.MapHttpRoute(
           name: "DefaultApi",
-          routeTemplate: "api/{controller}/{id}",
-          defaults: new { id = RouteParameter.Optional }
+          routeTemplate: "api/v1/topics/{id}",
+          defaults: new { controller = "topics", id = RouteParameter.Optional }
       );
 
       // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
