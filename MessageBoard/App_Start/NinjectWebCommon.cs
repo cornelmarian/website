@@ -5,6 +5,7 @@ namespace MessageBoard.App_Start
 {
   using System;
   using System.Web;
+  using MessageBoard.Data;
   using MessageBoard.Services;
   using Microsoft.Web.Infrastructure.DynamicModuleHelper;
   using Ninject;
@@ -57,6 +58,9 @@ namespace MessageBoard.App_Start
 #else
       kernel.Bind<IMailService>().To<MailService>().InRequestScope();
 #endif
+
+      kernel.Bind<MessageBoardContext>().To<MessageBoardContext>().InRequestScope();
+      kernel.Bind<IMessageBoardRepository>().To<MessageBoardRepository>().InRequestScope();
     }
   }
 }

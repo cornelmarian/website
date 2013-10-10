@@ -199,6 +199,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\IMessageBoardRepository.cs" />
+    <Compile Include="Data\MessageBoardContext.cs" />
+    <Compile Include="Data\MessageBoardMigrationsConfiguration.cs" />
+    <Compile Include="Data\MessageBoardRepository.cs" />
+    <Compile Include="Data\Reply.cs" />
+    <Compile Include="Data\Topic.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -211,6 +217,12 @@
     <Compile Include="Services\MockMailService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Content\Template\img\arrow-down.png" />
     <Content Include="Content\Template\img\arrow-right.png" />
@@ -343,7 +355,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
+    <None Include="Content\Site.less" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
