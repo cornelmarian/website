@@ -1,7 +1,7 @@
 ﻿// home-index.js
-var module = angular.module("homeIndex", []);
+var homeIndexModule = angular.module("homeIndex", []);
 
-module.config(["$routeProvider", function ($routeProvider) {
+homeIndexModule.config(["$routeProvider", function ($routeProvider) {
   $routeProvider.when("/", {
     controller: "topicsController",
     templateUrl: "/templates/topicsView.html"
@@ -20,7 +20,7 @@ module.config(["$routeProvider", function ($routeProvider) {
   $routeProvider.otherwise({ redirectTo: "/" });
 }]);
 
-module.factory("dataService", ["$http", "$q", function ($http, $q) {
+homeIndexModule.factory("dataService", ["$http", "$q", function ($http, $q) {
 
   var _topics = [];
   var _isInit = false;
