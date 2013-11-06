@@ -119,6 +119,7 @@ C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\System.Web.WebPages.De
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\System.Web.WebPages.dll
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\System.Web.WebPages.Razor.dll
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\WebActivator.dll
+C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\WebApiContrib.IoC.Ninject.dll
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\WebGrease.dll
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\WebMatrix.Data.dll
 C:\Users\Marian\Documents\GitHub\website\MessageBoard\bin\WebMatrix.WebData.dll
